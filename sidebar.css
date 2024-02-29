@@ -1,0 +1,43 @@
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 80px;
+    background-color: white;
+    width: 75px;
+    background-color: blue;
+}
+
+.sidebar-link{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 6px;
+    color: white;
+}
+
+.sidebar-link:hover{
+    background-color: black ;
+    color: white;
+    transition: 0.25s;
+}
+
+.sidebar-link:active{
+    background-color: blue;
+    color: white;
+}
+
+.sidebar-link img{
+    height: 35px;
+}
+
+.sidebar-link div{
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    font-weight: bolder;
+
+}
+

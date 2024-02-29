@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OraMart</title>
+    <link rel="icon" type="image/x-icon" href="pics/channels4_profile throttlehouse.jpg">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/amazon-header.css">
+    <link rel="stylesheet" href="styles/pages/amazon.css">
+
+</head>
+<body style="height: 2500px;">
+    <div class="header">
+        <div class="left-section">
+            <img style="height: 40px; margin-left: 10px; margin-right: 25px; border-radius: 20px;" src="icons/jay.jpg" alt="">
+            <h1>OraMart</h1>
+        </div>
+
+        <div class="middle-section">
+            <div class="amazon-header-middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+        
+                <button class="search-button">
+                  <img class="search-icon" src="images/icons/search-icon.png">
+                </button>
+              </div>
+        </div>
+        
+        <div class="right-section">
+            <div class="amazon-header-right-section">
+                <a class="orders-link header-link" href="orders.html">
+                  <span class="returns-text">Returns</span>
+                  <span class="orders-text">& Orders</span>
+                </a>
+        
+                <a class="cart-link header-link" href="checkout.html">
+                  <img class="cart-icon" src="images/icons/cart-icon.png">
+                  <div class="cart-quantity js-cart-quantity">0</div>
+                  <div class="cart-text">Cart</div>
+                </a>
+              </div>
+
+              <button class="account-button">
+                <img class="account-image" src="icons/signup.png" alt="">
+              </button>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <a href="index.html"><img src="icons/home.png" alt=""></a>
+            <div>Home</div>             
+        </div>
+        <div class="sidebar-link">
+            <a href="category.html"><img src="icons/category.png" alt=""></a>
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/account.png" alt="">
+            <div>Account Details</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/feedback.png" alt="">
+            <div>Feedback</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/settings.png" alt="">
+            <div>Settings</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/logout.png" alt="">
+            <div>Logout</div>
+        </div>
+        
+    </div>
+
+    <div class="main">
+        <div class="products-grid js-products-grid">
+        </div>
+    </div>
+  
+      <script type="module" src="scripts/oraMart.js"></script>
+</body>
+</html>
