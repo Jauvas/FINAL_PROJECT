@@ -59,11 +59,19 @@ export function renderPaymentSummary() {
       </div>
     </div>
 
-    <button class="place-order-button button-primary">
-      Place your order
+    <button class="place-order-button button-primary" onclick="
+      orderplaced();
+    ">
+      <a href="index.html">Place your order</a>
+      
     </button>
   `;
 
   document.querySelector('.js-payment-summary')
     .innerHTML = paymentSummaryHTML;
+}
+
+function() {
+  alert(`Congragulations!!
+Your Order Has Been Placed Successfully`)
 }

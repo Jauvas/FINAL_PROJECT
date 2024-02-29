@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <button class="back-button">
+        <a href="../index.html">Back</a>
+    </button>
+
+  <div id="popup" class="hidden">
+    <h2>Feedback Form</h2>
+    <form id="feedback-form">
+      <textarea name="feedback" id="feedback-text" rows="10" class="textarea" placeholder="[Enter your feedback here...]"></textarea>
+      <button type="submit" class="submit-button" onclick="
+        sendEmail()
+      ">
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <script src="feedback.js"></script>
+</body>
+</html>

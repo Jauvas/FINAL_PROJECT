@@ -1,0 +1,45 @@
+:root {
+    --light-background: #fff;
+    --light-text: #000;
+    --dark-background: #222;
+    --dark-text: #fff;
+  }
+
+  body{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  h1{
+    text-align: center;
+    color: blue;
+  }
+
+  .light-theme {
+    background-color: var(--light-background);
+    color: var(--light-text);
+  }
+  
+  .dark-theme {
+    background-color: var(--dark-background);
+    color: var(--dark-text);
+  }
+
+  .dark-theme-setting{
+    width: 30%;
+    border: black solid;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  .toggle-button{
+    float: right;
+  }
+
+  button{
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+  }

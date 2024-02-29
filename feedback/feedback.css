@@ -1,0 +1,74 @@
+body {
+    font-family: Arial;
+    background-color: white;
+  }
+  
+  #popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block; /* Initially hidden */
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .textarea{
+    color: blue;
+    background-color: white;
+    border: none;
+    width: 250px;
+    border-radius: 10px;
+  }
+
+  .submit-button{
+    background-color: white;
+    color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  .submit-button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  .submit-button a{
+    text-decoration: none;
+  }
+  
+  .back-button{
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 30px;
+  }
+
+  .back-button a{
+    color: white;
+    text-decoration: none;
+  }
