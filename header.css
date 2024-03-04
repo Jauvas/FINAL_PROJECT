@@ -35,12 +35,15 @@ button:hover{
     align-items: center;
 }
 
-h1{
+h1,
+h2{
     color: white;
     font-family: "Calligraffitti", cursive;
     font-weight: 400 bold;
     font-style: normal;
     font-size: 45px;
+    display: flex;
+    width: auto;
 }
 
 .home{

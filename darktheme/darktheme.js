@@ -22,3 +22,17 @@ if (toggleButton) {
     localStorage.setItem("theme", body.classList.contains("dark-theme") ? "dark" : "light");
   });
 }
+
+//darktheme event
+function darktheme() {
+  const buttonElement = document.querySelector('.js-darktheme-button');
+
+  if (buttonElement.innerHTML === 'OFF') {
+    buttonElement.innerHTML = 'ON';
+    buttonElement.classList.add('turned-on');
+} 
+else {
+    buttonElement.innerHTML = 'OFF';
+    buttonElement.classList.remove('turned-on');
+}
+}

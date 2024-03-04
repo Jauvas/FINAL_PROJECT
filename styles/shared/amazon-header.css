@@ -43,10 +43,6 @@
   margin-top: 5px;
 }
 
-.amazon-mobile-logo {
-  display: none;
-}
-
 @media (max-width: 575px) {
   .amazon-logo {
     display: none;
@@ -88,6 +84,7 @@
   height: 22px;
   margin-left: 2px;
   margin-top: 3px;
+  border-radius: 5px;
 }
 
 .amazon-header-right-section {
