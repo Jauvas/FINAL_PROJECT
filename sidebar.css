@@ -9,7 +9,7 @@
 }
 
 .sidebar-link{
-    height: 80px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,12 +17,20 @@
     cursor: pointer;
     margin-top: 6px;
     color: white;
+    width: 70px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: 500;
 }
 
 .sidebar-link:hover{
     background-color: black ;
     color: white;
-    transition: 0.25s;
+    transition: 0.5s;
+    transform: translateY(-5px);
 }
 
 .sidebar-link:active{
