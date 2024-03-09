@@ -189,7 +189,8 @@ header{
     margin-bottom: 20px;
 
 }
-.submit-btn{
+.submit-btn,
+.submit-btn a{
     margin: 10px;
     width: 250px;
     background: blue;
