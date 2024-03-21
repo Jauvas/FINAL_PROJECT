@@ -41,4 +41,3 @@ function toLogin() {
     register.style.display = 'none'
     login.style.display = 'block'
 };
-

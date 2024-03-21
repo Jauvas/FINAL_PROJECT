@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Change Example</title>
+    <style>
+        /* CSS animation for fading in the text */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Apply the animation to the text element */
+        p {
+            animation: fadeIn 0.5s ease-in-out; /* Change the duration and timing function as needed */
+        }
+    </style>
+</head>
+<body>
+    <p id="myText">Initial text</p>
+
+    <script>
+        // Get the element by its ID
+        const textElement = document.getElementById("myText");
+
+        // Function to change the text content
+        function changeText() {
+            textElement.textContent = "First text change";
+            setTimeout(() => {
+                textElement.textContent = "Second text change";
+                setTimeout(() => {
+                    textElement.textContent = "Third text change";
+                    setTimeout(() => {
+                        textElement.textContent = "text change";
+                    }, 5000);
+                }, 5000);
+            }, 5000); // 5000 milliseconds = 5 seconds
+        }
+
+
+        // Set a timeout to call the function after 3 seconds (adjust as needed)
+        setTimeout(changeText, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+</body>
+</html>

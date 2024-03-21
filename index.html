@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="logins/login.css">
 </head>
 <body style="
-background: url('jay.jpg') no-repeat;
+background: url('oraMart.PNG') no-repeat;
 background-size: cover;
 background-position: center;
 ">
     <header>
         <h2 class="account">Welcome To OraMart</h2>
         <nav class="navigation">
-            <a href="home.html">Home</a>
             <!--
             <a href="#">About</a>
             <a href="#">Services</a>
@@ -24,6 +23,36 @@ background-position: center;
             <button class="btn-login-popup">Login</button>
         </nav>
     </header>
+
+    <div class="welcome_div">
+        <p id="myText">Welcome to <span>OraMart!</span>
+            <br>We're thrilled you're here. 
+            <br>Come on in and explore our collection and treat yourself to something special</p>
+
+    <script>
+        // Get the element by its ID
+        const textElement = document.getElementById("myText");
+
+        // Function to change the text content
+        function changeText() {
+            textElement.textContent = "So glad you found us! \nWe offer unique treasures that are sure to make your day a little sweeter.";
+            setTimeout(() => {
+                textElement.textContent = "Welcome to your one-stop shop for happiness! \nExplore our collection and treat yourself to something special.";
+                setTimeout(() => {
+                    textElement.textContent = "Third text change";
+                    setTimeout(() => {
+                        textElement.textContent = "OraMart!  Where Sweet Style Meets Sweet Savings!";
+                    }, 10000);
+                }, 10000);
+            }, 10000); 
+        }
+
+
+        // Set a timeout to call the function after 3 seconds (adjust as needed)
+        setTimeout(changeText, 10000); // 10000 milliseconds = 10 seconds
+    </script>
+    </div>
+    
 
     <div class="wrapper">
         <div>
@@ -75,6 +104,12 @@ background-position: center;
                 </div>
 
                 <div class="input-box">
+                    <label for="username">Full Name</label>
+                    <input type="text" required>
+                    
+                </div>
+
+                <div class="input-box">
                     <label for="email">Email</label>
                     <input type="email" required>
                     
@@ -103,6 +138,9 @@ background-position: center;
 
         
     </div>
+
+
+
 
     <script src="logins/login.js"></script>
     

@@ -1,216 +1,195 @@
-.main {
-  max-width: 1100px;
-  padding-left: 30px;
-  padding-right: 30px;
 
-  margin-top: 140px;
-  margin-bottom: 100px;
 
-  /* margin-left: auto;
-     margin-right auto;
-     Is a trick for centering an element horizontally
-     without needing a container. */
-  margin-left: auto;
-  margin-right: auto;
+body{
+  background: white;
+  display: block;
 }
 
-.page-title {
-  font-weight: 700;
-  font-size: 22px;
-  margin-bottom: 18px;
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  background: blue;
+  margin-top: 0;
+  height: auto;
 }
 
-.checkout-grid {
-  display: grid;
-  /* Here, 1fr means the first column will take
-     up the remaining space in the grid. */
-  grid-template-columns: 1fr 350px;
-  column-gap: 12px;
-
-  /* Use align-items: start; to prevent the elements
-     in the grid from stretching vertically. */
-  align-items: start;
+.account{
+  font-size: 2em;
+  color: white;
+  user-select: none;
+  margin-right: 10px;
+  font-family: "Calligraffitti", cursive;
 }
 
-@media (max-width: 1000px) {
-  .main {
-    max-width: 500px;
-  }
-
-  .checkout-grid {
-    grid-template-columns: 1fr;
-  }
+.navigation{
+  border: solid black;
+  margin-top: auto;
 }
 
-.cart-item-container,
-.payment-summary {
-  border: 1px solid rgb(222, 222, 222);
-  border-radius: 4px;
-  padding: 18px;
+.navigation a{
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+} 
+
+.navigation .btn-login-popup{
+  width: 230px;
+  height: 50px;
+  background: blue;
+  border: 2px solid white;
+  outline: none;  
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 500;
+  margin-left: 40px;
 }
 
-.cart-item-container {
-  margin-bottom: 12px;
+.navigation .empty-btn{
+  width: 230px;
+  height: 50px;
+  background: blue;
+  border: 2px solid white;
+  outline: none;  
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 500;
+  margin-left: 40px;
 }
 
-.payment-summary {
-  padding-bottom: 5px;
+.div1{
+  float: left;
 }
 
-@media (max-width: 1000px) {
-  .payment-summary {
-    /* grid-row: 1 means this element will be placed into row
-      1 in the grid. (Normally, the row that an element is
-      placed in is determined by the order of the elements in
-      the HTML. grid-row overrides this default ordering). */
-    grid-row: 1;
-    margin-bottom: 12px;
-  }
+.div2{
+  float: right;
+  right: 0;
 }
 
-.delivery-date {
-  color: rgb(0, 118, 0);
-  font-weight: 700;
-  font-size: 19px;
-  margin-top: 5px;
-  margin-bottom: 22px;
+.wrapper{
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background: blue;
+  border: 2px solid gray;
+  padding: 10px;
+  border-radius: 50px;
+  backdrop-filter: blue blur(20px);
+  color: white;
+  box-shadow: 0 0 30px rgba(0,0,0, .5);
+  justify-content: center;
+  align-items: center;
+  transition: height 0.2s ease;
+  transform: scale(0);
+  transition: tranform, 0.5s ease, height 0.2s ease;
+  margin-top: 40px;
 }
 
-.cart-item-details-grid {
-  display: grid;
-  /* 100px 1fr 1fr; means the 2nd and 3rd column will
-     take up half the remaining space in the grid
-     (they will divide up the remaining space evenly). */
-  grid-template-columns: 100px 1fr 1fr;
-  column-gap: 25px;
+.wrapper.active-popup{
+  transform: scale(1);
 }
 
-@media (max-width: 1000px) {
-  .cart-item-details-grid {
-    grid-template-columns: 100px 1fr;
-    row-gap: 30px;
-  }
+.wrapper .login-form{
+  width: 350px;
+  padding: 40px;
 }
 
-.product-image {
-  max-width: 100%;
-  max-height: 120px;
-
-  /* margin-left: auto;
-     margin-right auto;
-     Is a trick for centering an element horizontally
-     without needing a container. */
-  margin-left: auto;
-  margin-right: auto;
+.wrapper .login { 
+  transition: transform 0.2s ease;
+  transform: translateX(0);
 }
 
-.product-name {
-  font-weight: 700;
-  margin-bottom: 8px;
+.login{
+  display: inline-block;
 }
 
-.product-price {
-  color: rgb(177, 39, 4);
-  font-weight: 700;
+.wrapper .close-popup{
+  position: absolute;
+  top: 1;
+  right: 8px;
+  width: 45px;
+  height: 45px;
+  background: black;
+  font-size: 2em;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.wrapper.active{
+  height: 520px;
+}
+
+.login-form h2{
+  font-size: 2em;
+  color: white;
+  text-align: center;
   margin-bottom: 5px;
 }
 
-.product-quantity .link-primary {
-  margin-left: 3px;
+.login-form .input-box input{
+  border-radius: 50px;
+  padding: 8px;
+  width: 280px;
+  justify-content: center;
 }
 
-@media (max-width: 1000px) {
-  .delivery-options {
-    /* grid-column: 1 means this element will be placed
-       in column 1 in the grid. (Normally, the column that
-       an element is placed in is determined by the order
-       of the elements in the HTML. grid-column overrides
-       this default ordering).
-       
-       / span 2 means this element will take up 2 columns
-       in the grid (Normally, each element takes up 1
-       column in the grid). */
-    grid-column: 1 / span 2;
-  }
-}
-
-.delivery-options-title {
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.delivery-option {
-  display: grid;
-  grid-template-columns: 24px 1fr;
-  margin-bottom: 12px;
-  cursor: pointer;
-}
-
-.delivery-option-input {
-  margin-left: 0px;
-  cursor: pointer;
-}
-
-.delivery-option-date {
-  color: rgb(0, 118, 0);
+.input-box input{
+  outline: none;
+  border: none;
+  font-size: 15px;
+  margin-top: 10px;
   font-weight: 500;
-  margin-bottom: 3px;
 }
 
-.delivery-option-price {
-  color: rgb(120, 120, 120);
+.input-box{
+  position: relative;
+  width: 100px;
+  height: 60px;
+  border-bottom: 2px solid gray;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+.submit-btn,
+.submit-btn a{
+  margin: 10px;
+  width: 250px;
+  background: white;
+  color: blue;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px;
   font-size: 15px;
+  font-weight: bold;
+  transition: 0.5s;
+  text-decoration: none; 
 }
 
-.payment-summary-title {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 12px;
+.submit-btn:hover{
+  transform: translateY(-5px);
+  transition: 0.5s;
+} 
+
+.payment-methonds{
+  margin-top: 30px;
 }
 
-.payment-summary-row {
-  display: grid;
-  /* 1fr auto; means the width of the 2nd column will be
-     determined by the elements inside the column (auto).
-     The 1st column will take up the remaining space. */
-  grid-template-columns: 1fr auto;
-
-  font-size: 15px;
-  margin-bottom: 9px;
-}
-
-.payment-summary-money {
-  text-align: right;
-}
-
-.subtotal-row .payment-summary-money {
-  border-top: 1px solid rgb(222, 222, 222);
-}
-
-.subtotal-row div {
-  padding-top: 9px;
-}
-
-.total-row {
-  color: rgb(177, 39, 4);
-  font-weight: 700;
-  font-size: 18px;
-
-  border-top: 1px solid rgb(222, 222, 222);
-  padding-top: 18px;
-}
-
-.place-order-button {
-  width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 8px;
-
-  margin-top: 11px;
-  margin-bottom: 15px;
-}
-
-.place-order-button a{
-  color: white;
-  text-decoration: none;
-}
