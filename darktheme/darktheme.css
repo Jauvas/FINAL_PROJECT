@@ -70,3 +70,11 @@
     transition: 0.5s;
     border: black solid;
   }
+
+  .turned-off p{
+    color: black;
+  }
+
+  .turned-on p{
+    color: white;
+  }

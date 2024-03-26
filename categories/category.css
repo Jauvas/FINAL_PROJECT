@@ -1,0 +1,94 @@
+.phone-product-img{
+    width: 900px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.product-img{
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+
+.product-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /*.product-img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+  }*/
+
+  .product-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .phone-product-img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .slider-container {
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slider-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .slide-container {
+    width: 900px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    max-height: 500px; /* Set the maximum height for the container */
+  }
+
+  .slide-content {
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .reveal-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .reveal-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Add more styling as needed */
+
+  .category{
+    border: solid blue;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 100px ;
+  }

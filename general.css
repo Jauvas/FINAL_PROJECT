@@ -11,3 +11,70 @@ body{
     padding-right: 25px;
     background-color: white;
 }
+ 
+html{
+    scroll-behavior: smooth 1s;
+}
+
+.categories{
+    margin-top: 100px;
+}
+
+h3{
+    color: white;
+    font-size: 40px;
+    font-family: Arial;
+    text-align: center;
+    background: blue;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.category_div{
+    color: blue;
+}
+
+.category_div li{
+   list-style: none; 
+}
+
+.category{
+    width: 1000px;
+}
+
+p{
+    color: blue;
+}
+
+/*color pattern*/
+ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul li{
+    width: 50px;
+    height: 50px;
+    background: var(--color);
+    border-radius: 50%;
+    animation: grow 1.5s ease-in-out infinite;
+    animation-delay: var(--delay);
+    box-shadow: 0 0 50px var(--color);
+    align-items: center;
+}
+
+@keyframes grow{
+    0%,
+    50%,
+    100%
+    {
+        transform: scale(0.2);
+    }
+    20%{
+        transform: scale(1);
+    }
+
+}

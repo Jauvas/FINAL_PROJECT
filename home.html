@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OraMart</title>
-    <link rel="icon" type="image/x-icon" href="jay.jpg">
+    <link rel="icon" type="image/x-icon" href="oraMart.PNG">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="sidebar.css">
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Load a font called Roboto from Google Fonts. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="styles/shared/general.css">
     <link rel="stylesheet" href="styles/shared/amazon-header.css">
     <link rel="stylesheet" href="styles/pages/oraMart.css">
-
+    <link rel="stylesheet" href="categories/category.css">
     <link rel="stylesheet" href="darktheme/darktheme.css">
 
 </head>
@@ -69,11 +69,11 @@
 
     <div class="sidebar">
         <div class="sidebar-link">
-            <a href="home.html"><img src="icons/home.png" alt=""></a>
+            <a href="#home"><img src="icons/home.png" alt=""></a>
             <div>Home</div>             
         </div>
         <div class="sidebar-link">
-            <a href="#"><img src="icons/category.png" alt=""></a>
+            <a href="#categories"><img src="icons/category.png" alt=""></a>
             <div>Explore</div>
         </div>
         <div class="sidebar-link">
@@ -95,12 +95,173 @@
         
     </div>
 
-    <div class="main">
+    <div class="main" id="home">
         <div class="products-grid js-products-grid">
+        </div>
+    </div>
+
+    <div class="categories" id="categories">
+        <h3>Explore More</h3>
+
+        <!--color patterns-->
+        <ul class="ul grow">
+            <li style="--delay: -1.4s; --color: black"></li>
+            <li style="--delay: -1.2s; --color: yellow"></li> 
+            <li style="--delay: -1s; --color: red"></li>
+            <li style="--delay: -0.8s; --color: blue"></li>
+            <li style="--delay: -0.6s; --color: green"></li> 
+            <li style="--delay: -0.4s; --color: orangered"></li>
+            <li style="--delay: -0.2s; --color: purple"></li>
+            <li style="--delay: -0.2s; --color: hotpink"></li>
+        </ul>
+
+        <div class="category_div">
+            <li>
+                <div class="category">
+                    <h4>SmartPhones & Tablets</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In perspiciatis, nam
+                     praesentium aliquam ducimus iure laborum aut voluptatibus nisi! Rem ratione beatae natus quaerat earum quia doloribus 
+                     exercitationem alias! Nisi!
+                    </p>
+
+                    <div>
+                        <div class=" slider container">
+                            <div class="product-container">
+                                <div class="slider-container">
+                                <div class="slider-wrapper">
+                                    <div class="slider-item">
+                                    <img src="categories/images/samsung.PNG" alt="" class="phone-product-img">
+                                    </div>
+                                    <div class="slider-item">
+                                    <img src="categories/images/apple.PNG" alt="" class="phone-product-img">
+                                    </div>
+                                    <div class="slider-item">
+                                    <img src="categories/images/xiaomi.PNG" alt="" class="phone-product-img">
+                                    </div>
+                                    <div class="slider-item">
+                                    <img src="categories/images/oneplus.PNG" alt="" class="phone-product-img">
+                                    </div>
+                                    <div class="slider-item">
+                                    <img src="categories/images/google.PNG" alt="" class="phone-product-img">
+                                    </div>
+                                    <div class="slider-item">
+                                    <img src="categories/images/honor.PNG" alt="" class="phone-product-img">
+                                    </div>
+                                    <div class="slider-item">
+                                    <img src="categories/images/huawei.PNG" alt="" class="phone-product-img">
+                                    </div>
+                                    <!-- Add more products as needed -->
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                        
+                    </div>
+            </div>
+            </li>
+
+            <li>
+                <div class="category">
+                    <h4>Laptops</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In perspiciatis, nam
+                     praesentium aliquam ducimus iure laborum aut voluptatibus nisi! Rem ratione beatae natus quaerat earum quia doloribus 
+                     exercitationem alias! Nisi!
+                    </p>
+                    
+                    <div>
+                        <img src="categories/images/macbooks.jpg" alt="" class="product-img">
+                        <img src="categories/images/galaxybooks.jpg" alt="" class="product-img">
+                        <img src="categories/images/hps.jpg" alt="" class="product-img">
+                        <img src="categories/images/dells.jpg" alt="" class="product-img">
+                    </div>
+            </li>
+
+            <li>
+                <div class="category">
+                    <h4>Home Appliances</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In perspiciatis, nam
+                     praesentium aliquam ducimus iure laborum aut voluptatibus nisi! Rem ratione beatae natus quaerat earum quia doloribus 
+                     exercitationem alias! Nisi!
+                    </p>
+
+                    <div>
+                        <img src="categories/images/hm1.jpg" alt="" class="product-img">
+                        <img src="categories/images/hm2.jpg" alt="" class="product-img">
+                        <img src="categories/images/hm3.jpg" alt="" class="product-img">
+                        <img src="categories/images/hm4.jpg" alt="" class="product-img">
+                        <img src="categories/images/hm5.jpg" alt="" class="product-img">
+                        <img src="categories/images/hm6.jpg" alt="" class="product-img">
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="category">
+                    <h4>Cutlery</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In perspiciatis, nam
+                     praesentium aliquam ducimus iure laborum aut voluptatibus nisi! Rem ratione beatae natus quaerat earum quia doloribus 
+                     exercitationem alias! Nisi!
+                    </p>
+
+                    <div>
+                        <img src="categories/images/cut1.jpg" alt="" class="product-img">
+                        <img src="categories/images/cut2.jpg" alt="" class="product-img">
+                        <img src="categories/images/cut3.jpg" alt="" class="product-img">
+                        <img src="categories/images/cut4.jpg" alt="" class="product-img">
+                        <img src="categories/images/cut5.jpg" alt="" class="product-img">
+                        <img src="categories/images/cut6.jpg" alt="" class="product-img">
+                        <img src="categories/images/cut7.jpg" alt="" class="product-img">
+                        <img src="categories/images/cut8.jpg" alt="" class="product-img">
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="category">
+                    <h4>Fashion</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In perspiciatis, nam
+                     praesentium aliquam ducimus iure laborum aut voluptatibus nisi! Rem ratione beatae natus quaerat earum quia doloribus 
+                     exercitationem alias! Nisi!
+                    </p>
+
+                    <div>
+                        <img src="categories/images/men.jpg" alt="" class="product-img">
+                        <img src="categories/images/women.jpg" alt="" class="product-img">
+                        <img src="categories/images/kids.jpg" alt="" class="product-img">
+                        <img src="categories/images/baby.jpg" alt="" class="product-img">
+                        <img src="categories/images/f1.jpg" alt="" class="product-img">
+                        <img src="categories/images/f2.jpg" alt="" class="product-img">
+                    </div>
+                </div>
+            </li>
         </div>
     </div>
   
       <script type="module" src="scripts/oraMart.js"></script>
       <script src="darktheme/darktheme.js"></script>
+
+      <script>
+        // JavaScript for the image slider
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        let currentIndex = 5;
+        
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % sliderWrapper.children.length;
+            updateSlider();
+        }, 3000);
+        
+        function updateSlider() {
+            const translateValue = -currentIndex * 100 + '%';
+            sliderWrapper.style.transform = 'translateX(' + translateValue + ')';
+        }
+    </script>
 </body>
 </html>
