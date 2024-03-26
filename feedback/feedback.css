@@ -22,6 +22,10 @@ body {
     display: none;
   }
 
+  input{
+    height: 150px;
+  }
+
   .textarea{
     color: blue;
     background-color: white;
