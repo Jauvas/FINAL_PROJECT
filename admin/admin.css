@@ -1,12 +1,17 @@
-body{
-    /*background-image: url("../oraMart.PNG");
-    background-size: cover 100% no-repeat;
-    height: 5000px;*/
+html{
+    scroll-behavior: smooth;
 }
 
-button{
+body{
+    background-image: url("../oraMart.PNG");
+    background-size: cover 100% no-repeat;
+    height: auto;
+}
+
+.logout{
     background: none;
     border: none;
+    color: white;
 }
 
 header{
@@ -52,6 +57,34 @@ header a:hover{
     
 }
 
+nav{
+    background-color: blue;
+    margin-top: 20px;
+    height: 30px;
+    padding: 10px;
+    width: auto;
+    border-radius: 15px;
+    z-index: 100;
+    position: fixed;
+    margin-bottom: 1000px;
+    display: flex;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    transition: 0.2s;
+    color: blue;
+    background-color: white;
+    padding: 3px;
+    border-radius: 10px;
+}
+
 h1{
     font-size: 50px;
     margin: 0;
@@ -70,43 +103,54 @@ h3{
     margin: 10px;
 }
 
-.general{
-    float: left;
-    border: solid blue;
-    width: 50%;
-    margin-left: 50px;
-    margin-top: 120px;
-    border-radius: 40px;
-    height: 1000px;
+p{
+    color: white;
+    font-size: 20px;
 }
 
-.orders{
-    float: right;
-    border: solid blue;
-    width: 35%;
-    margin: 50px;
-    border-radius: 30px;
-    color: blue;
-    height: 1000px;
-    margin-top: 120px;
-}
-
-.order-div{
-    background-color: white;
-
-}
-
-.dashboard{
+button {
+    padding: 5px 10px;
     margin-top: 10px;
-    border: solid black;
-    box-shadow: 100px;
-    opacity: 100px;
-    box-shadow: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 30px;
-    height: 40%;
-    padding-bottom: 60px;
+    cursor: pointer;
+    color: white;
+    background: blue;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: inline-block;
+    margin-left: 100px;
+}
+h2 {
+    margin-top: 0;
+    padding: 10px;
+    font-family: Arial;
+    color: white;
+}
+
+section {
+    padding: 20px;
+    height: 200px;
+    margin-top: 50px;
+    border: solid blue;
+    border-radius: 50px;
+}
+
+/* Example sections */
+.order-management {
+    backdrop-filter: blur(50px);
+}
+.product-management {
+    backdrop-filter: blur(50px);
+}
+.inventory-management {
+    backdrop-filter: blur(50px);
+}
+
+.color-patterns{
 }
 
 

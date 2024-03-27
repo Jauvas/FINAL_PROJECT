@@ -12,51 +12,101 @@
         <img class="logo" src="../images/oramart_logo.png" alt="">
         <h1>OraMart Admin</h1>
         <a href="#" class="notifications">Notifications</a>
-        <button>
-            <a href="adminLogin.html"><img src="../icons/logout.png" alt="">Signout</a>
+        <button class="logout">
+            <a href="adminlogin.html"><img src="../icons/logout.png" alt="">Signout</a>
         </button>
     </header>
 
-    
-
-    <section class="general">
-        <div class="dashboard">
-            <h3>Dashboard</h3>
-
-            <!--color patterns-->
-            <ul class="ul grow">
-                <li style="--delay: -1.4s; --color: white"></li>
-                <li style="--delay: -1.2s; --color: yellow"></li> 
-                <li style="--delay: -1s; --color: red"></li>
-                <li style="--delay: -0.8s; --color: blue"></li>
-                <li style="--delay: -0.6s; --color: green"></li> 
-                <li style="--delay: -0.4s; --color: orangered"></li>
-                <li style="--delay: -0.2s; --color: purple"></li>
-                <li style="--delay: -0.2s; --color: hotpink"></li>
-            </ul>
-        </div>
-
-        <div class="dashboard">
-            <h3>Users</h3>
-        </div>
-    </section>
-
-
-    <section class="orders">
-        <h3>Orders</h3>
-        <div class="order-div"></div>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="#orders">Order Management</a></li>
+            <li><a href="#users">Users</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#product-management">Product Management</a></li>
+            <li><a href="#inventory-management">Inventory Management</a></li>
+            <li><a href="#returns">Returns and Refunds</a></li>
+        </ul>
+    </nav>
 
     
 
+    <div class="container">
+        <section id="orders" class="order-management">
+            <h2>Order Management</h2>
+            <p>
+                View and manage customer orders, including order status, payment processing, and fulfillment.
+           </p>
 
+           <button>Place order</button>
+           <button>Cancel Order</button>
+            <!-- Add order management content here -->
+        </section>
 
+        <section id="users" class="order-management">
+            <h2>Users</h2>
+            <p>
+                View customer information, order history, and manage customer accounts. Handle customer inquiries and issues.
+           </p>
+           <button>Edit Customer</button>
+            <button>Delete Customer</button>
+            <!-- Add order management content here -->
+        </section>
 
+        <section id="feedback" class="order-management">
+            <h2>Feedback</h2>
+            <p>
+                View and respond to customer feedback, including reviews and ratings, to improve customer satisfaction. 
+            </p>
+            <button>Respond to Feedback</button>
+            <!-- Add order management content here -->
+        </section>
 
+        <section id="product-management" class="product-management">
+            <h2>Product Management</h2>
+            <p>
+                Add, edit, and remove products from the store. Manage product categories, descriptions, images, and pricing.
+           </p>
+           <button>Add Product</button>
+            <button>Edit Product</button>
+            <button>Delete Product</button>
+            <!-- Add product management content here -->
+        </section>
 
+        <section id="inventory-management" class="inventory-management">
+            <h2>Inventory Management</h2>
+            <p>
+                Track and manage product inventory levels. Receive alerts for low stock and manage restocking processes.
+           </p>
+           <button>Restock Product</button>
+            <!-- Add inventory management content here -->
+        </section>
 
+        <section id="returns" class="product-management">
+            <h2>Returns and Refunds</h2>
+            <p>Process returns and refunds, manage return policies, and handle customer inquiries related to returns.</p>
+            <button>Process Return</button>
+            <button>Issue Refund</button>
+            <!-- Add inventory management content here -->
+        </section>
+        <!-- Add more sections for other features as needed -->
+    </div>
 
+    <div class="color-patterns">
+        <!--color patterns-->
+    <ul class="ul grow">
+        <li style="--delay: -1.4s; --color: white"></li>
+        <li style="--delay: -1.2s; --color: yellow"></li> 
+        <li style="--delay: -1s; --color: red"></li>
+        <li style="--delay: -0.8s; --color: blue"></li>
+        <li style="--delay: -0.6s; --color: green"></li> 
+        <li style="--delay: -0.4s; --color: orangered"></li>
+        <li style="--delay: -0.2s; --color: purple"></li>
+        <li style="--delay: -0.2s; --color: hotpink"></li>
+    </ul>
+</div>
     
+
+   
 
     <script src="admin.js"></script>
 </body>

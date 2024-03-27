@@ -321,7 +321,7 @@ header{
     position: fixed;
     border: solid rgba(9, 9, 83, 0.568);
     width: 80%;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
 }
 
 #myText{
