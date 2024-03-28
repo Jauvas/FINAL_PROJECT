@@ -3,74 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="icon" type="image/x-icon" href="jay.jpg">
-    <link rel="stylesheet" href="styles/pages/checkout/checkout.css">
+    <title>Online Shop Checkout</title>
+    <link rel="stylesheet" href="darktheme/darktheme.css">
+    <style>
+        *{
+          color: blue;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: blue;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .cart-items {
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .payment-methods {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .payment-method {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .payment-method.selected {
+            border-color: #007bff;
+            background-color: #f0f8ff;
+        }
+        .shipping-methods {
+            margin-bottom: 20px;
+        }
+        .shipping-method {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .shipping-method.selected {
+            border-color: #007bff;
+            background-color: #f0f8ff;
+        }
+        .place-order-btn {
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .home-btn{
+          background: blue;
+          color: white;
+          border: none;
+        }
+
+        .home-btn a{
+          text-decoration: none;
+          color: white;
+        }
+    </style>
 </head>
 <body>
-    <header>
-      <a href="home.html"><img style="height: 75px; margin-left: 10px; margin-right: 25px; border-radius: 40px; width: 75px" src="images/oramart_logo.png" alt=""></a>
-      <h2 class="account">OraMart Basket</h2>
-    </header>
-
-    <div class="payment-methods">
-      <h3>Payment Method</h3>
-      <label for="payment"></label>
-      <input type="radio" name="payment" id="payment">
-    </div>
-
-    <div class="navigation">
-      <button class="empty-btn">
-        Empty Your Basket
-        <img src="icons/reset.png" alt="">
-      </button>
-
-      <button class="btn-login-popup">
-        Proceed to Checkout
-        <img src="icons/forward.png" alt="">
-      </button>
-    </div>
-
-
-    <div class="wrapper">
-        <div>
-            <span class="close-popup" onclick="
-                remove()
-            ">
-                x
-            </span>
+    <div class="container">
+        <h2>Checkout</h2>
+        
+        <!-- Cart Items -->
+        <div class="cart-items">
+            <div class="cart-item">Product 1 - UGX 10500</div>
+            <div class="cart-item">Product 2 - UGX 20000</div>
+            <div class="cart-item">Product 3 - UGX 15000</div>
         </div>
 
-        <!--this is the part of the login-->
-        <div id="login" class="login-form login">
-            <h2>Checkout</h2>
-            <form action="#">
-                <div class="input-box">
-                    <label for="email">Email</label>
-                    <input type="email" required>
-                    
-                </div>
-
-                <div class="input-box">
-                    <label for="password">Password</label>
-                    <input type="password" required>
-                    
-                </div>
-
-                <button type="submit" class="submit-btn">
-                  <a href="home.html">Confirm Order</a>
-                </button>
-            </form>
+        <!-- Shipping Methods -->
+        <div class="shipping-methods">
+            <div class="shipping-method" id="standard">Standard Shipping - UGX 5000</div>
+            <div class="shipping-method" id="express">Express Shipping - UGX 10000</div>
         </div>
+
+        <!--total-->
+        <div class="cart-item">TOTAL = </div>
+
+        <!-- Payment Methods -->
+        <div class="payment-methods">
+            <div class="payment-method" id="credit-card">Credit Card</div>
+            <div class="payment-method" id="momo">Mobile Money</div>
+            <div class="payment-method" id="bank">Bank Transfer</div>
+        </div>
+
+
+        <!-- Place Order Button -->
+        <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
     </div>
 
+    <div><button class="home-btn"><a href="home.html">Home</a></button></div>
 
+    <script src="darktheme/darktheme.js"></script>
+    <script>
+        // Function to handle shipping method selection
+        document.addEventListener('DOMContentLoaded', function () {
+            const shippingMethods = document.querySelectorAll('.shipping-method');
+            shippingMethods.forEach(method => {
+                method.addEventListener('click', function () {
+                    shippingMethods.forEach(m => m.classList.remove('selected'));
+                    this.classList.add('selected');
+                });
+            });
+        });
 
+        // Function to handle payment method selection
+        document.addEventListener('DOMContentLoaded', function () {
+            const paymentMethods = document.querySelectorAll('.payment-method');
+            paymentMethods.forEach(method => {
+                method.addEventListener('click', function () {
+                    paymentMethods.forEach(m => m.classList.remove('selected'));
+                    this.classList.add('selected');
+                });
+            });
+        });
 
-
-
-
-    <script src="scripts/checkout.js"></script>
-    
+        // Function to simulate placing order (no actual functionality)
+        function placeOrder() {
+            const selectedShippingMethod = document.querySelector('.shipping-method.selected');
+            const selectedPaymentMethod = document.querySelector('.payment-method.selected');
+            if (selectedShippingMethod && selectedPaymentMethod) {
+                alert('Order Placed Successfully!');
+                window.location.href = "home.html";
+            } else {
+                alert('Please select shipping and payment methods.');
+            }
+        }
+    </script>
 </body>
 </html>

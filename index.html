@@ -50,6 +50,18 @@ background-position: center;
 
         // Set a timeout to call the function after 3 seconds (adjust as needed)
         setTimeout(changeText, 10000); // 10000 milliseconds = 10 seconds
+
+
+        let currentIdx = 0;
+
+        function changeTextLoop() {
+        textElement.textContent = messages[currentIdx];
+        currentIdx = (currentIdx + 1) % messages.length; // Loop back to the first message
+
+        setTimeout(changeTextLoop, 10000); // Repeat every 10 seconds
+        }
+
+        changeTextLoop(); // Start the loop
     </script>
     </div>
     
