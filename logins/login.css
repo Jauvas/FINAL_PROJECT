@@ -92,7 +92,7 @@ header{
     border: 2px solid blue;
     padding-left: 50px;
     padding-top: 10px;
-    border-radius: 50px;
+    border-radius: 25px;
     backdrop-filter: blur(20px);
     color: white;
     box-shadow: 0 0 30px rgba(0,0,0, .5);
@@ -188,11 +188,11 @@ header{
     position: relative;
     width: 100px;
     height: 60px;
-    border-bottom: 2px solid gray;
     justify-content: center;
     margin-bottom: 20px;
 
 }
+
 .submit-btn,
 .submit-btn a{
     margin: 10px;
