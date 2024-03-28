@@ -86,11 +86,12 @@ header{
 
 .wrapper{
     position: relative;
-    width: 400px;
-    height: 550px;
+    width: 450px;
+    height: auto;
     background: transparent;
-    border: 2px solid gray;
-    padding: 10px;
+    border: 2px solid blue;
+    padding-left: 50px;
+    padding-top: 10px;
     border-radius: 50px;
     backdrop-filter: blur(20px);
     color: white;
@@ -112,7 +113,7 @@ header{
     padding: 40px;
 }
 
-.wrapper .login { 
+.wrapper.login { 
     transition: transform 0.2s ease;
     transform: translateX(0);
 }
