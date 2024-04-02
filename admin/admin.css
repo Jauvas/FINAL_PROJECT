@@ -6,6 +6,8 @@ body{
     background-image: url("../oraMart.PNG");
     background-size: cover 100% no-repeat;
     height: auto;
+    font-family: arial;
+    color: white;
 }
 
 .logout{
@@ -146,9 +148,55 @@ section {
 }
 .product-management {
     backdrop-filter: blur(50px);
+    height: auto;
 }
 .inventory-management {
     backdrop-filter: blur(50px);
+    height: auto;
+}
+
+
+/* css styles for adding product management */
+.toDo-grid,
+.toDo-input-grid{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.toDo-input-grid{
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+
+.name-input,
+.date{
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.add-button{
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.delete-button{
+    background-color: darkred;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px
 }
 
 .color-patterns{

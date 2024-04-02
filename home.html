@@ -72,8 +72,8 @@
             <div>Explore</div>
         </div>
         <div class="sidebar-link">
-            <a href="#"><img src="icons/account.png" alt=""></a>
-            <div style="text-align: center;">Account Details</div>
+            <a href="accounts/personal.html"><img src="icons/account.png" alt=""></a>
+            <div style="text-align: center;">Personal Details</div>
         </div>
         <div class="sidebar-link">
             <a href="feedback/feedback.html"><img src="icons/feedback.png" alt=""></a>
@@ -242,7 +242,7 @@
 
 
     <footer>
-        <p>Reach out to one of our customer service personel to attend to you.</p>
+        <p id="current-datetime">Reach out to one of our customer service personel to attend to you.</p>
         
         <div>
             <ul>
@@ -281,6 +281,28 @@
             const translateValue = -currentIndex * 100 + '%';
             sliderWrapper.style.transform = 'translateX(' + translateValue + ')';
         }
+
+
+
+
+
+                //updating the date and time
+        function updateTime() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = now.getMonth() + 1; // Months are zero-indexed (January = 0)
+            const day = now.getDate();
+            const hours = now.getHours().toString().padStart(2, '0'); // Add leading zero for single-digit hours
+            const minutes = now.getMinutes().toString().padStart(2, '0'); // Add leading zero for single-digit minutes
+            const seconds = now.getSeconds().toString().padStart(2, '0'); // Add leading zero for single-digit seconds
+
+            const formattedTime = `${year}-${month.toString().padStart(2, '0')}-${day} ${hours}:${minutes}:${seconds}`;
+            document.getElementById("current-datetime").textContent = formattedTime;
+        }
+
+        // Update the time initially and then every second
+        updateTime();
+        setInterval(updateTime, 1000); // Update every 1 second
     </script>
 </body>
 </html>

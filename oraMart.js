@@ -72,3 +72,10 @@ document.querySelectorAll('.js-add-to-cart')
       updateCartQuantity();
     });
   });
+
+
+
+
+
+
+  

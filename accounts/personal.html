@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <link type="image/x-icon" href="../oraMart.PNG">
+    <style>
+        body {
+            font-family: Arial;
+            background-color: white;
+            background-image: url(../oraMart.PNG);
+            margin: 50px;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+            font-family: Arial;
+        }
+
+        .body{
+            border-radius: 20px;
+            border: 1px solid blue;
+            backdrop-filter: blur(1000px);
+            height: auto;
+            padding: 20px;
+        }
+        .strong{
+            margin-bottom: 10px;
+            list-style: circle;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        button a{
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <button>
+        <a href="accounts.html">Edit Personal data</a>
+    </button>
+
+    <div class="body">
+        <h3 style="text-align: center; margin-bottom: 10px;">Personal Details</h3>
+        <div>
+            <li class="strong" id="gender">Gender:</li>
+            <li class="strong" id="location">Location:</li>
+            <li class="strong" id="phone">Phone Number:</li>
+            <li class="strong" id="bio">Occupation:</li>
+        </div>
+    </div>
+
+    <button>
+        <a href="../home.html">Home</a>
+    </button>
+    
+
+    <script src="../darktheme/darktheme.js"></script>
+    <script src="personal.js"></script>
+</body>
+</html>

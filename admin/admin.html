@@ -66,9 +66,19 @@
             <p>
                 Add, edit, and remove products from the store. Manage product categories, descriptions, images, and pricing.
            </p>
-           <button>Add Product</button>
-            <button>Edit Product</button>
-            <button>Delete Product</button>
+           <p>Add Product</p>
+           <div class="toDo-input-grid">
+            <input type="text" placeholder="Product Name" class="js-nameInput name-input" required>
+            <input type="number" class="date-input date" placeholder="Quantity" required>
+            <input type="image" class="date-input date" placeholder="Quantity">
+            <button class="add-button js-add" onclick="
+                addToDo()
+            ">Add</button>
+        </div>
+    
+        <div class="js-toDoList toDo-grid">
+            text
+        </div>
             <!-- Add product management content here -->
         </section>
 
